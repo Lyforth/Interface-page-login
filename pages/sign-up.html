@@ -5,30 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Importar CSS-->
-    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="../css/sign-up-style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <!--Importar Biblioteca Javascript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>    
-    <title>Login</title>
+    <title>Signup</title>
 </head>
 <body>
     <form action="index.html" class="login-data">
-        <h1>Login</h1>
+        <h1>Cadastre-se</h1>
         <div class="text1">
             <input type="text">
             <span data-placeholder="Nome de Usuário"></span>
         </div>
         <div class="text1">
             <input type="text">
+            <span data-placeholder="E-mail"></span>
+        </div>
+        <div class="text1">
+            <input type="text">
+            <span data-placeholder="Telefone"></span>
+        </div>
+        <div class="text1">
+            <input type="text">
             <span data-placeholder="Senha"></span>
         </div>
-        <input type="submit" class="btn-login" value="Login">
+        <div class="text1">
+            <input type="text">
+            <span data-placeholder="Confirmar Senha"></span>
+        </div>
+        <input type="submit" class="btn-login" value="Cadastrar">
         <div class="btn-txt">
-            <p style="color: #707070">Ainda não possui uma conta? <a href="sign-up.html">Cadastre-se</a></p>
+            <p style="color: #707070">Já possui uma conta? <a href="../index.html">Login</a></p>
         </div>        
-        <label class="icon-social"><a href="#"><i style="color: #3b5998; margin-top: 35px; margin-left: 10%;" class="fab fa-facebook-square fa-2x"></i></a></label>
-        <label class="icon-social"><a href="#"><i style="color: #00acee; margin-top: 35px; margin-left: 20%;" class="fab fa-twitter fa-2x"></i></a></label>
-        <label class="icon-social"><a href="#"><i style="color: #25d366; margin-top: 35px; margin-left: 20%;" class="fab fa-whatsapp fa-2x"></i></a></label>
     </form>
     <script type="text/javascript">
         $(".text1 input").on("focus",function(){
